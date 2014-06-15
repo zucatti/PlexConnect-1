@@ -104,3 +104,5 @@ assets/templates/plex/images/custom/flow/3DMovies-flow.png
 *.pyc
 
 *.log
+
+assets/fanartcache
