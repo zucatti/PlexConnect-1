@@ -1,0 +1,42 @@
+<atv>
+  <head>
+    <script src="{{URL(:/js/utils.js)}}" />
+  </head>
+  
+  
+    <body>
+    <scroller id="com.sample.homevideo-grid">
+      <header>
+ 	  <imageHeader>
+	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=550|1080=825)}}, 0" required="true">{{URL(:/fanartcache/{{LFBG("plexgrey","{{EVAL(quote_plus("{{VAL(title1)}}"))}}","{{EVAL(quote_plus("{{VAL(title2)}}"))}}","backgrounds/plexgreydefault.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","40","25","CCCCCC","FF8800","right","top","70","25","162","","PlexGridSub")}})}}</image>
+	    </imageHeader>
+      </header>
+      <items>
+        <grid columnCount="8" id="grid_0">
+          <items>
+            <fourByThreePoster id="{{VAL(key)}}" featured="true" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}" 
+                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MovieByFolder')"
+                             onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MovieByFolder')">
+              {{COPY(Directory)}}
+              <title>{{VAL(title)}}</title>
+              <subtitle>{{VAL(year:&#x00AD;)}}</subtitle>
+              <image>{{URL(:/templates/plexgrey/images/Folder.png)}}</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </fourByThreePoster>
+            
+            <fourByThreePoster id="{{VAL(key)}}" featured="true" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
+                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
+                             onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')">
+              {{COPY(Video)}}
+              <title>{{VAL(title)}}</title>
+              <subtitle>{{VAL(year:&#x00AD;)}}</subtitle>
+              <image>{{IMAGEURL(thumb::384)}}</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </fourByThreePoster>
+          </items>
+        </grid>
+      </items>
+    </scroller>
+  </body>
+  
+</atv>

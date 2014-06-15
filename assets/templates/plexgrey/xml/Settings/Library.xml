@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <head>
+    <script src="{{URL(:/js/utils.js)}}" />
+    <script src="{{URL(:/js/settings.js)}}" />
+  </head>
+
+  <body>
+    <itemCollectionWithImageHeader id="SettingsPage_Library">
+      <header>
+        <imageHeader>
+          <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=692|1080=1038)}}}, 0" required="true">
+           {{URL(:/fanartcache/{{LFBG("plexgrey","{{EVAL(quote_plus("{{TEXT(Settings)}}"))}}","","backgrounds/plexgreydefault.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","40","","CCCCCC","","right","top","60","25","","","PlexSettings")}})}}
+          </image>
+        </imageHeader>
+      </header>
+      <preview>
+        <keyedPreview>
+          <title>&#x00AD;<!--soft-hyphen--></title>
+          <summary/>
+          <metadataKeys>
+            <label>{{TEXT(Version)}}</label>
+            <label>{{TEXT(Authors)}}</label>
+            <label>{{TEXT(Wiki/Docs)}}</label>
+            <label>{{TEXT(Homepage)}}</label>
+            <label>{{TEXT(Forum)}}</label>
+          </metadataKeys>
+          <metadataValues>
+            <label>{{EVAL(__VERSION__)}}</label>
+            <label>Baa, roidy</label>
+            <label>f00b4r, meltman</label>
+            <label>https://github.com/ibaa/plexconnect</label>
+            <label>http://forums.plexapp.com/...plexconnect</label>
+          </metadataValues>
+          <image>{{URL(:/templates/plexgrey/images/PlexConnectLogo.png)}}</image>
+        </keyedPreview>
+      </preview>
+
+      <menu>
+        <sections>
+		<menuSection>
+           <header>
+              <horizontalDivider alignment="left">
+                <title>{{TEXT(Library)}}</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="plexgrey_LibraryView" onSelect="toggleSettings('plexgrey_LibraryView', 'Settings/Library')">
+                <label>{{TEXT(Library View)}}</label>
+                <rightLabel>{{SETTING(plexgrey_libraryview)}}</rightLabel>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="plexgrey_SectionIcons" onSelect="toggleSettings('plexgrey_SectionIcons', 'Settings/Library')">
+                <label>{{TEXT(Library Icons)}}</label>
+                <rightLabel>{{SETTING(plexgrey_sectionicons)}}</rightLabel>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="plexgrey_SectionsPosition" onSelect="toggleSettings('plexgrey_SectionsPosition', 'Settings/Library')">
+                <label>{{TEXT(Library Sections)}}</label>
+                <rightLabel>{{SETTING(plexgrey_sectionsposition)}}</rightLabel>
+              </oneLineMenuItem>
+              </items>
+              </menuSection>
+              <menuSection>
+             <header>
+              <horizontalDivider alignment="left">
+                <title>{{TEXT(Shared Library)}}</title>
+              </horizontalDivider>
+            </header>
+            <items>
+                <oneLineMenuItem id="plexgrey_LibraryView_Remote" onSelect="toggleSettings('plexgrey_LibraryView_Remote', 'Settings/Library')">
+                <label>{{TEXT(Library View)}}</label>
+                <rightLabel>{{SETTING(plexgrey_libraryview_remote)}}</rightLabel>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="plexgrey_SectionIcons_Shared" onSelect="toggleSettings('plexgrey_SectionIcons_Shared', 'Settings/Library')">
+                <label>{{TEXT(Library Icons)}}</label>
+                <rightLabel>{{SETTING(plexgrey_sectionicons_shared)}}</rightLabel>
+              </oneLineMenuItem> 
+               </items>
+              </menuSection>
+        <!--Removed Below iOS 6.0-->
+             
+              <menuSection>
+           <header>
+              <horizontalDivider alignment="left">
+                <title>{{TEXT(Appearance)}}</title>
+              </horizontalDivider>
+            </header>
+            <items>
+              <oneLineMenuItem id="plexgrey_Library_Search" onSelect="toggleSettings('plexgrey_Library_Search', 'Settings/Library')">
+                <label>{{TEXT(Search Section)}}</label>
+                <rightLabel>{{SETTING(plexgrey_Library_search)}}</rightLabel>
+              </oneLineMenuItem>
+              <oneLineMenuItem id="plexgrey_ShowTitles_Library" onSelect="toggleSettings('plexgrey_ShowTitles_Library', 'Settings/Library')">
+                <label>{{TEXT(Poster Titles)}}</label>
+                <rightLabel>{{SETTING(plexgrey_showtitles_library)}}</rightLabel>
+              </oneLineMenuItem> 
+              <oneLineMenuItem id="ChannelView" onSelect="toggleSettings('ChannelView', 'Settings/Library')">
+                <label>{{TEXT(Channel View)}}</label>
+                <rightLabel>{{SETTING(channelview)}}</rightLabel>
+              </oneLineMenuItem>            
+            </items>
+          </menuSection>
+
+          <menuSection>
+            <header>
+              <horizontalDivider alignment="left">
+                <title>{{TEXT(Library Extras)}}</title>
+              </horizontalDivider>
+            </header>
+            <items>
+
+              <oneLineMenuItem id="plexgrey_Library_OnDeck" onSelect="toggleSettings('plexgrey_Library_OnDeck', 'Settings/Library')">
+                <label>{{TEXT(On Deck)}}</label>
+                <accessories>
+                  <checkMark/>
+                </accessories>{{CUT($plexgrey_library_ondeck::unchecked=CUT|checked=)}}
+              </oneLineMenuItem>
+
+              <oneLineMenuItem id="plexgrey_Library_RecentlyAdded" onSelect="toggleSettings('plexgrey_Library_RecentlyAdded', 'Settings/Library')">
+                <label>{{TEXT(Recently Added)}}</label>
+                <accessories>
+                  <checkMark/>
+                </accessories>{{CUT($plexgrey_library_recentlyadded::unchecked=CUT|checked=)}}
+              </oneLineMenuItem>               
+              <oneLineMenuItem id="plexgrey_Library_Channels" onSelect="toggleSettings('plexgrey_Library_Channels', 'Settings/Library')">
+                <label>{{TEXT(Channels)}}</label>
+                <accessories>
+                  <checkMark/>
+                </accessories>{{CUT($plexgrey_library_channels::unchecked=CUT|checked=)}}
+              </oneLineMenuItem>              
+            </items>
+          </menuSection>
+        </sections>
+      </menu>
+    </itemCollectionWithImageHeader>
+  </body>
+</atv>

@@ -1,0 +1,46 @@
+<atv>
+  <head>
+    <script src="{{URL(:/js/utils.js)}}" />
+  </head>
+
+  <body>
+    <scroller id="single_artwork_select">
+      <header>
+        <imageHeader>
+        	    <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=550|1080=825)}}, 0" required="true">{{URL(:/fanartcache/{{LFBG("plexgrey","{{EVAL(quote_plus("{{VAL(Video/title)}}"))}}","{{EVAL(quote_plus("{{TEXT(Select Artwork)}}"))}}","backgrounds/plexgreydefault.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","40","25","CCCCCC","FF8800","right","top","60","25","162","","PlexPagedGridSub")}})}}</image>{{CUT(Video/title:CUT:=CUT| =)}}
+        	    <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=550|1080=825)}}, 0" required="true">{{URL(:/fanartcache/{{LFBG("plexgrey","{{EVAL(quote_plus("{{VAL(Video/title2)}}"))}}","{{EVAL(quote_plus("{{TEXT(Select Artwork)}}"))}}","backgrounds/plexgreydefault.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","40","25","CCCCCC","FF8800","right","top","60","25","162","","PlexPagedGridSub")}})}}</image>{{CUT(Video/title:: =CUT)}}
+        </imageHeader>
+      </header>
+     
+      <items>
+        <collectionDivider alignment="left">
+          <title></title>
+        </collectionDivider>
+        
+        {{ADDXML(posters::/library/metadata/{{VAL(Video/ratingKey)}}/posters)}}
+        {{VAR(key:Video/ratingKey)}}
+        <shelf id="coverflow" columnCount="{{EVAL(min({{VAL(@posters/size:0)}},3))}}">
+          <sections>
+            <shelfSection>
+              <items>
+                <goldenPoster related="true" featured="true" id="{{VAL(Video/ratingKey)}}" alwaysShowTitles="true"
+                              onSelect="changeArtwork('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(#key)}}', '{{VAL(key)}}', '');atv.unloadPage();">
+                  {{COPY(@posters/Photo)}}
+                  <title>{{VAL(selected::0=|1=Selected)}}</title>
+                  <image>{{IMAGEURL(thumb)}}</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </goldenPoster>
+              
+              
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        
+        <collectionDivider alignment="left">
+          <title></title>
+        </collectionDivider>
+      </items>
+    </scroller>
+  </body>
+</atv>

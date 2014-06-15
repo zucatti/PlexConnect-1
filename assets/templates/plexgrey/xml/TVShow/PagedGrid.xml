@@ -1,0 +1,36 @@
+<atv>
+  <head>
+    <script src="{{URL(:/js/utils.js)}}" />
+  </head>
+
+  <body>
+    <scroller id="Show_Grid">
+      <header>
+	    <imageHeader>
+          <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=550|1080=825)}}, 0" required="true">{{URL(:/fanartcache/{{LFBG("plexgrey","{{EVAL(quote_plus("{{VAL(title1)}}"))}}","{{EVAL(quote_plus("{{VAL(title2)}}"))}}","backgrounds/plexgreydefault.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","40","25","CCCCCC","ff8800","right","top","60","25","162","","PlexGridSub")}})}}</image>
+	    </imageHeader>
+      </header>
+      <items>
+
+        <pagedGrid id="grid_0">
+            <fourByThreePoster id="{{VAL(key)}}" featured="true" alwaysShowTitles="{{VAL($showtitles_tvshows::Highlighted Only=false|Show All=true)}}"
+                         onPlay="flattenSeason('{{URL(key)}}', '{{SETTING(flattenseason)}}', 'False')"
+                         onSelect="flattenSeason('{{URL(key)}}', '{{SETTING(flattenseason)}}', 'False')"
+                         onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenu')">
+              {{PAGEDCOPY(Directory,7,2)}}
+              <title>{{VAL(title)}}</title>
+              <image>{{IMAGEURL(thumb::384)}}</image>
+              <defaultImage>resource://Poster.png</defaultImage>
+			  <badgeCount>{{unwatchedCountGrid(leafCount:0:viewedLeafCount:0)}}</badgeCount>{{CUT($showunwatched::False=CUT|True=)}}
+            </fourByThreePoster>{{CUT(Directory/title:CUT:=)}}
+
+            <fourByThreePoster id="none">
+              <title>{{TEXT(No Unwatched Shows)}}</title>
+              <defaultImage>resource://Poster.png</defaultImage>
+            </fourByThreePoster>{{CUT(Directory/title::=CUT)}}
+        </pagedGrid>
+      </items>
+    </scroller>
+    
+  </body>
+</atv>
