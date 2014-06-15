@@ -657,7 +657,12 @@ def XML_PMS2aTV(PMS_address, path, options):
         
         
     elif PMSroot.get('viewGroup','')=="secondary":
-        XMLtemplate = 'Directory.xml'
+        if template == "default":
+          XMLtemplate = 'Directory.xml'
+        else:
+          XMLtemplate = 'Directory/Directory.xml'
+    
+    
     
     elif PMSroot.get('viewGroup','')=='show':
         if PMSroot.get('title2')=='By Folder':
@@ -723,7 +728,10 @@ def XML_PMS2aTV(PMS_address, path, options):
             XMLtemplate = 'Photo_Directories.xml'
     
     else:
-        XMLtemplate = 'Directory.xml'
+        if template == "default":
+          XMLtemplate = 'Directory.xml'
+        else:
+          XMLtemplate = 'Directory/Directory.xml'
     
     dprint(__name__, 1, "XMLTemplate: "+XMLtemplate)
 

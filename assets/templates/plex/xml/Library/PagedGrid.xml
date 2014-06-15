@@ -134,7 +134,7 @@
                               {{URL(:/fanartcache/{{getBackground({{EVAL({\
                               'template'    : "plex",\
                               'title'       : "{{TEXT(Search)}}",\
-                              'image'       : "icons/search.png",\
+                              'image'       : "icons/plexsearch.png",\
                               'resolution'  : "square",\
                               'font'        : "fonts/OpenSans/OpenSans-Light.ttf",\
                               'titleSize'   : "40",\
