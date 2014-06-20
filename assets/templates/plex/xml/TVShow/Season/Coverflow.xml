@@ -21,6 +21,7 @@
               'imageBlur'   : "{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}",\
               'layers'      : ["PlexSubPagedGrid{{VAL($plex_fanarttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
               })}})}})}}
+              </image>
         </imageHeader>
 
       </header>

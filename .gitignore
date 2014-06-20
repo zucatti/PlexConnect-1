@@ -1,6 +1,8 @@
 
 *.txt
 
+*.cer
+
 *.key
 
 *.pem
