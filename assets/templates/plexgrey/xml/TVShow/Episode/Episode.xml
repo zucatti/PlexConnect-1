@@ -21,10 +21,11 @@
         </imageHeader>
       </header>
       <menu>
+      
         <sections>
           <menuSection>
             <items>
-            <oneLineMenuItem id="none">
+<!--            <oneLineMenuItem id="none">
                 <label>{{VAL(#title2)}}</label>
                 <preview>
                   <keyedPreview>
@@ -35,11 +36,12 @@
                     <image>{{IMAGEURL(thumb::768)}}</image>
                   </keyedPreview>
                 </preview>
-              </oneLineMenuItem>
+              </oneLineMenuItem>-->
               <twoLineEnhancedMenuItem id="{{VAL(ratingKey)}}"
                                          onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
                                          onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=EpisodePrePlay')"
                                          onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
+                                         
                 {{COPY(Video:index::=|0 =COPY)}}
                 <label>{{VAL(title)}}</label>
                 <ordinal>{{VAL(index)}}</ordinal>
@@ -63,7 +65,7 @@
                       <label>Aired: {{VAL(originallyAvailableAt)}}</label>
                       <label>Studio: {{VAL(#studio)}}</label>
                       <label>Runtime: {{getDurationString(duration)}}</label>
-                      <label>Quality: {{VAL(Media/videoResolution:Unknown:1080=1080p|720=720p|576=576 SD|480=480 SD|sd=SD)}}   {{VAL(Media/audioCodec:Unknown:ac3=AC3|aac=AAC|mp3=MP3|dca=DTS|drms=DRMS)}} {{VAL(Media/audioChannels:Unknown:2=Stereo 2.0|6=5.1|8=7.1)}} </label>
+                      <label>Quality: {{VAL(Media/videoResolution:Unknown:1080=HD 1080p|720=HD 720p|576=576p|480=480p|sd=SD)}}   {{VAL(Media/audioCodec:Unknown:ac3=AC3|aac=AAC|mp3=MP3|dca=DTS|drms=DRMS)}} {{VAL(Media/audioChannels:Unknown:2=Stereo 2.0|6=5.1|8=7.1)}} </label>
                       <starRating hasUserSetRating="true">
                         <percentage>{{EVAL({{VAL(userRating:0)}} * 10)}}</percentage>
                       </starRating>{{CUT(userRating:CUT:0=)}}
