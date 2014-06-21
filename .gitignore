@@ -105,11 +105,12 @@ assets/templates/plex/images/custom/flow/3DMovies-flow.png
 
 *.log
 
-assets/fanartcache
-Icon
 
-Icon
 
-assets/fanartcache/tmp.png
 
-Icon
+
+assets/fanartcache/plex+FlowIconApple+artist-flow.png+Music+40+ffffff+center+bottom+0+60++35+ffffff+170+None+flow.png
+
+assets/fanartcache/plex+FlowIconApple+movie-flow.png+3D+Movies+40+ffffff+center+bottom+0+60++35+ffffff+170+None+flow.png
+
+*.png
