@@ -1,1 +1,0 @@
-start /B pythonw PlexConnect.py

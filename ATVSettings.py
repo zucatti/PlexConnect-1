@@ -63,6 +63,7 @@ options = { \
     'plexgrey_library_recentlyadded'     :('checked', 'unchecked'), \
     'plexgrey_library_channels'          :('unchecked', 'checked'), \
     'plexgrey_showtitles_library'        :('Show All', 'Highlighted Only'), \
+    
 
     
 
@@ -114,6 +115,7 @@ options = { \
     'overscanadjust' :('0', '1', '2', '3', '-3', '-2', '-1'), \
     'clockposition' :('Center', 'Right', 'Left'), \
     'showendtime' :('True', 'False'), \
+    'showplayinfos'            :('True', 'False'), \
     'timeformat' :('24 Hour', '12 Hour'), \
     'myplex_user' :('', ), \
     'myplex_auth' :('', ), \
