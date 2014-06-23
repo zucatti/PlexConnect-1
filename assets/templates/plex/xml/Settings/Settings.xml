@@ -88,7 +88,7 @@
               </horizontalDivider>
             </header>
             <items>
-              <oneLineMenuItem id="Template" onSelect="switchTemplate(true);">
+              <oneLineMenuItem id="Template" onSelect="switchTemplate();">
                 <label>{{TEXT(Template)}}</label>
                 <rightLabel>{{SETTING(template)}}</rightLabel>
               </oneLineMenuItem>

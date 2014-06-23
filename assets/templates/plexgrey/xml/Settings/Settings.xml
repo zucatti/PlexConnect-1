@@ -72,7 +72,7 @@
               </horizontalDivider>
             </header>
             <items>
-              <oneLineMenuItem id="Template" onSelect="toggleSettings('Template', 'Settings/Settings')">
+              <oneLineMenuItem id="Template" onSelect="switchTemplate();">
                 <label>{{TEXT(Template)}}</label>
                 <rightLabel>{{SETTING(template)}}</rightLabel>
               </oneLineMenuItem>
