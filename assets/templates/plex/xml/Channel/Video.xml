@@ -9,62 +9,18 @@
         <imageHeader>
   
           <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=552|1080=828)}}, 0" required="true">
-          {{URL(:/fanartcache/{{getBackground({{EVAL({\
-          'template'    : "plex",\
-          'title'       : "{{EVAL(quote_plus("{{VAL(title1)}}"))}}",\
-          'subtitle'    : "{{EVAL(quote_plus("{{TEXT(Plex Channels)}}"))}}",\
-          'image'       : "backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png",\
-          'resolution'  : "{{VAL(^aTVScreenResolution)}}",\
-          'font'        : "fonts/OpenSans/OpenSans-Light.ttf",\
-          'imageBlur'   : "{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}",\
-          'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-          'subtitleColor': "{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-          'layers'      : ["PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
-          })}})}})}}
+          {{URL(:/fanartcache/{{LFBG("plex","{{EVAL(quote_plus("{{TEXT(Plex Channels)}}"))}}","{{VAL(title1)}}","backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","50","35","{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","right","top","70","10","170","","PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}})}})}}
           </image>{{CUT(title2::=CUT)}}
           <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=552|1080=828)}}, 0" required="true">
-          {{URL(:/fanartcache/{{getBackground({{EVAL({\
-          'template'    : "plex",\
-          'title'       : "{{EVAL(quote_plus("{{VAL(title2)}}"))}}",\
-          'subtitle'    : "{{EVAL(quote_plus("{{VAL(title1:Plex Channels)}}"))}}",\
-          'image'       : "backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png",\
-          'resolution'  : "{{VAL(^aTVScreenResolution)}}",\
-          'font'        : "fonts/OpenSans/OpenSans-Light.ttf",\
-          'imageBlur'   : "{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}",\
-          'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-          'subtitleColor': "{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-          'layers'      : [""PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
-          })}})}})}}
+          {{URL(:/fanartcache/{{LFBG("plex","{{EVAL(quote_plus("{{VAL(title1:Plex Channels)}}"))}}","{{VAL(title2)}}","backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","50","35","{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","right","top","70","10","170","","PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}})}})}}
           </image>{{CUT(title2:CUT:=)}}{{CUT(#ChanVer:CUT:V1=|V2=CUT)}}
           
           <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=552|1080=828)}}, 0" required="true">
-              {{URL(:/fanartcache/{{getBackground({{EVAL({\
-              'template'    : "plex",\
-              'title'       : "{{EVAL(quote_plus("{{VAL(title2)}}"))}}",\
-              'subtitle'    : "{{EVAL(quote_plus("{{VAL(title1:Plex Channels)}}"))}}",\
-              'image'       : "backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png",\
-              'resolution'  : "{{VAL(^aTVScreenResolution)}}",\
-              'font'        : "fonts/OpenSans/OpenSans-Light.ttf",\
-              'imageBlur'   : "{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}",\
-              'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-              'subtitleColor': "{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-              'layers'      : ["PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
-              })}})}})}}
+          {{URL(:/fanartcache/{{LFBG("plex","{{EVAL(quote_plus("{{VAL(title1:Plex Channels)}}"))}}","{{VAL(title2)}}","backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","50","35","{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","right","top","70","10","170","","PlexSubList{{VAL($plex_listtint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}})}})}}
           </image>{{CUT(title2:CUT:=)}}{{CUT(#ChanVer:CUT:V2=|V1=CUT)}}         
           
           <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=552|1080=828)}}, 0" required="true">
-              {{URL(:/fanartcache/{{getBackground({{EVAL({\
-              'template'    : "plex",\
-              'title'       : "{{EVAL(quote_plus("{{VAL(title2)}}"))}}",\
-              'subtitle'    : "{{EVAL(quote_plus("{{VAL(title1:Plex Channels)}}"))}}",\
-              'image'       : "backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png",\
-              'resolution'  : "{{VAL(^aTVScreenResolution)}}",\
-              'font'        : "fonts/OpenSans/OpenSans-Light.ttf",\
-              'imageBlur'   : "{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}",\
-              'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-              'subtitleColor': "{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-              'layers'      : ["PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
-              })}})}})}}
+          {{URL(:/fanartcache/{{LFBG("plex","{{EVAL(quote_plus("{{VAL(title1:Plex Channels)}}"))}}","{{VAL(title2)}}","backgrounds/plex{{VAL($plex_menubackground::Grey=default|Plex Orange=orange|Apple Blue=blue|Green=green)}}.png","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","50","35","{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","right","top","70","10","170","","PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}})}})}}
           </image>{{CUT(title2:CUT:=)}}{{CUT(search:CUT:1=CUT)}}         
           
 

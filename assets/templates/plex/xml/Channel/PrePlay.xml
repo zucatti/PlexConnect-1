@@ -11,20 +11,7 @@
         </styles>
         <header>
 	    <imageHeader>
-	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=440|1080=660)}}, 0" required="true">
-              {{URL(:/fanartcache/{{getBackground({{EVAL({\
-              'template'    : "plex",\
-              'title'       : "{{EVAL(quote_plus("{{VAL(Video/grandparentTitle)}}"))}}",\
-              'subtitle'    : "{{EVAL(quote_plus("{{VAL(Video/index)}}. {{VAL(Video/title)}}"))}}",\
-              'image'       : "{{IMAGEURL(Video/art:::)}}",\
-              'resolution'  : "{{VAL(^aTVScreenResolution)}}",\
-              'font'        : "fonts/OpenSans/OpenSans-Light.ttf",\
-              'imageBlur'   : "{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}",\
-              'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-              'subtitleColor': "{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
-              'layers'      : ["PlexPrePlay{{VAL($plex_fanarttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
-              })}})}})}}
-
+	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=440|1080=660)}}, 0" required="true">{{URL(:/fanartcache/{{LFBG("plex","{{EVAL(quote_plus("{{VAL(Video/grandparentTitle)}}"))}}","{{EVAL(quote_plus("{{VAL(Video/index)}}. {{VAL(Video/title)}}"))}}","{{EVAL(quote_plus("{{IMAGEURL(Video/thumb::384)}}"))}}","{{VAL(^aTVScreenResolution)}}","fonts/OpenSans/OpenSans-Light.ttf","50","35","{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}","right","top","70","10","170","{{VAL($plex_fanartblur::1=1|2=2|3=3|0=)}}","PlexSubGrid{{VAL($plex_fanarttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}})}})}}
 	      </image>
 	    </imageHeader>
 	  </header>
