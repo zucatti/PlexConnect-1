@@ -353,19 +353,19 @@ def XML_PMS2aTV(PMS_address, path, options):
        if template == "default":
          XMLtemplate = 'MovieSection.xml'
        else:
-         XMLtemplate = 'Movie/Section.xml'
+         XMLtemplate = 'Movie/Section/'+g_ATVSettings.getSetting(UDID, template+'_movieview').replace(' ','')+'.xml'
     
     elif cmd == 'HomeVideoSection':
        if template == "default":
          XMLtemplate = 'HomeVideoSection.xml'
        else:
-         XMLtemplate = 'HomeVideo/Section.xml'
+         XMLtemplate = 'HomeVideo/Section/'+g_ATVSettings.getSetting(UDID, template+'_homevideoview').replace(' ','')+'.xml' 
         
     elif cmd == 'TVSection':
        if template == "default":
          XMLtemplate = 'TVSection.xml'
        else:
-         XMLtemplate = 'TVShow/Section.xml'
+         XMLtemplate = 'TVShow/Section/'+g_ATVSettings.getSetting(UDID, template+'_showview').replace(' ','')+'.xml' 
     
     elif cmd == 'LibraryOnDeck':
        if template == "default":
