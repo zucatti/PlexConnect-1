@@ -10,16 +10,17 @@ from Debug import *  # dprint()
 
 
 options = { \
-    'template'                      :('Plex', 'PlexGrey'), \
+    'template'                      :('default', 'Plex', 'PlexGrey'), \
 #TemplateSettings
 
+    
 #plex
 #   library view
-    'plex_libraryview_remote'       :('Top Paged Grid', 'Top Grid', 'Bookcase', 'List'), \
-    'plex_libraryview'              :('Paged Grid', 'Grid', 'List', 'Bookcase'), \
-    'plex_movieview'                :('Fow', 'Paged Grid', 'Grid', 'List', 'Detailed List'), \
-    'plex_homevideoview'            :('Paged Grid', 'Grid', 'List', 'Detailed List'), \
-    'plex_showview'                 :('Flow', 'Paged Grid', 'List', 'Flow', 'Grid', 'Bookcase'), \
+    'plex_libraryview_remote'       :('Top Paged Grid', 'Top Grid', 'List'), \
+    'plex_libraryview'              :('Paged Grid', 'Grid', 'List'), \
+    'plex_movieview'                :('Flow', 'Paged Grid', 'Grid', 'List', 'Detailed List'), \
+    'plex_homevideoview'            :('Flow', 'Paged Grid', 'Grid', 'List', 'Detailed List'), \
+    'plex_showview'                 :('Flow', 'Paged Grid', 'Grid', 'List', 'Bookcase'), \
     'plex_channelview'              :('Grid', 'List', 'Bookcase'), \
     'plex_sectionicons'              :('Fanart', 'Apple', 'Plex', 'Custom'), \
     'plex_sectionicons_shared'       :('Fanart', 'Apple', 'Plex'), \
@@ -45,9 +46,6 @@ options = { \
     'plex_showplayinfos'            :('True', 'False'), \
 
 
-
-
-
 #plexgrey
     'plexgrey_libraryview_remote'       :('Top Paged Grid', 'Top Grid', 'Bookcase', 'List'), \
     'plexgrey_libraryview'              :('Paged Grid', 'Grid', 'List', 'Bookcase'), \
@@ -63,6 +61,7 @@ options = { \
     'plexgrey_library_recentlyadded'     :('checked', 'unchecked'), \
     'plexgrey_library_channels'          :('unchecked', 'checked'), \
     'plexgrey_showtitles_library'        :('Show All', 'Highlighted Only'), \
+    
     
 
     
