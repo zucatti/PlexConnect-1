@@ -17,14 +17,14 @@ options = { \
 #   library view
     'plex_libraryview_remote'       :('Top Paged Grid', 'Top Grid', 'Bookcase', 'List'), \
     'plex_libraryview'              :('Paged Grid', 'Grid', 'List', 'Bookcase'), \
-    'plex_movieview'                :('Paged Grid', 'Grid', 'List', 'Detailed List', 'Flow'), \
+    'plex_movieview'                :('Fow', 'Paged Grid', 'Grid', 'List', 'Detailed List'), \
     'plex_homevideoview'            :('Paged Grid', 'Grid', 'List', 'Detailed List'), \
-    'plex_showview'                 :('Paged Grid', 'List', 'Flow', 'Grid', 'Bookcase'), \
-    'plex_channelview'              :('List', 'Grid', 'Bookcase'), \
+    'plex_showview'                 :('Flow', 'Paged Grid', 'List', 'Flow', 'Grid', 'Bookcase'), \
+    'plex_channelview'              :('Grid', 'List', 'Bookcase'), \
     'plex_sectionicons'              :('Fanart', 'Apple', 'Plex', 'Custom'), \
     'plex_sectionicons_shared'       :('Fanart', 'Apple', 'Plex'), \
-    'plex_sectionsposition'          :('Flow', 'Top'), \
-    'plex_library_search'            :('Show', 'Hide'), \
+    'plex_sectionsposition'          :('Top', 'Flow'), \
+    'plex_library_search'            :('Hide', 'Show'), \
     'plex_library_ondeck'            :('checked', 'unchecked'), \
     'plex_library_recentlyadded'     :('checked', 'unchecked'), \
     'plex_library_channels'          :('checked', 'unchecked'), \
@@ -53,11 +53,11 @@ options = { \
     'plexgrey_libraryview'              :('Paged Grid', 'Grid', 'List', 'Bookcase'), \
     'plexgrey_movieview'                :('Paged Grid', 'Grid', 'Flow', 'List', 'Detailed List'), \
     'plexgrey_homevideoview'            :('Paged Grid', 'Grid', 'Flow', 'Detailed List', 'List'), \
-    'plexgrey_showview'                 :('Paged Grid', 'List', 'Grid', 'Bookcase', 'Flow'), \
+    'plexgrey_showview'                 :('Paged Grid', 'Flow', 'Grid', 'Bookcase', 'List'), \
     'plexgrey_channelview'              :('List', 'Grid', 'Bookcase'), \
     'plexgrey_sectionicons'              :('Fanart', 'Apple', 'Plex', 'Custom'), \
     'plexgrey_sectionicons_shared'       :('Fanart', 'Apple', 'Plex'), \
-    'plexgrey_sectionsposition'          :('Flow', 'Top'), \
+    'plexgrey_sectionsposition'          :('Top', 'Flow'), \
     'plexgrey_library_search'            :('Show', 'Hide'), \
     'plexgrey_library_ondeck'            :('checked', 'unchecked'), \
     'plexgrey_library_recentlyadded'     :('checked', 'unchecked'), \
