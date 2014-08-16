@@ -11,7 +11,7 @@
   	<header>
   	<!--Fullscreen-->
 	    <imageHeader>
-	    	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=552|1080=840)}}, 0" required="true">
+	    	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=552|1080=835)}}, 0" required="true">
 	    	      {{URL(:/fanartcache/{{getBackground({{EVAL({\
                   'template'    : "plex",\
                   'title'       : "{{EVAL(quote_plus("{{VAL(title1)}}"))}}",\
@@ -28,7 +28,6 @@
 
 	    </imageHeader>
 	</header>
-    <!--Banner-->
       <menu>
         <sections>
           <menuSection>

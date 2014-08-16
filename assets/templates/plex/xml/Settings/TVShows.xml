@@ -58,6 +58,10 @@
                 <label>{{TEXT(Season View)}}</label>
                 <rightLabel>{{SETTING(seasonview)}}</rightLabel>
               </oneLineMenuItem>
+              <oneLineMenuItem id="plex_EpisodeView" onSelect="toggleSettings('plex_EpisodeView', 'Settings/TVShows')">
+                <label>{{TEXT(Episode View)}}</label>
+                <rightLabel>{{SETTING(plex_episodeview)}}</rightLabel>
+              </oneLineMenuItem>
               <oneLineMenuItem id="ShowUnwatched" onSelect="toggleSettings('ShowUnwatched', 'Settings/TVShows')">
                 <label>{{TEXT(Show Unwatched Count)}}</label>
                 <rightLabel>{{SETTING(showunwatched)}}</rightLabel>

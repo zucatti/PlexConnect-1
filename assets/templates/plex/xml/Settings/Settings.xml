@@ -69,20 +69,29 @@
                 <label>{{TEXT(MyPlex Sign Out)}}</label>
                 <rightLabel>{{SETTING(myplex_user)}}</rightLabel>
                 <accessories></accessories>
-              </oneLineMenuItem>
-              <oneLineMenuItem id="TrancoderView" onSelect="atv.loadURL('{{URL(:/)}}&amp;PlexConnect=SettingsTranscoder')">
+              </oneLineMenuItem>            
+            </items>
+          </menuSection>
+          
+          
+          <menuSection>
+              <header>
+              <horizontalDivider alignment="left">
+                <title>{{TEXT(Transcoder)}}</title>
+              </horizontalDivider>
+            </header>
+          <items>
+          <oneLineMenuItem id="TrancoderView" onSelect="atv.loadURL('{{URL(:/)}}&amp;PlexConnect=SettingsTranscoder')">
                 <label>{{TEXT(Transcoder Options)}}</label>
                 <accessories>
                   <arrow/>
                 </accessories>
-                
-              </oneLineMenuItem>
-              
-            </items>
+                </oneLineMenuItem>
+                </items>
           </menuSection>
           
           <menuSection>
-            <header>
+              <header>
               <horizontalDivider alignment="left">
                 <title>{{TEXT(Appearance)}}</title>
               </horizontalDivider>

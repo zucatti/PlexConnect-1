@@ -27,7 +27,8 @@
                'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
                'layers'      : ["PlexGrid{{VAL($plex_gridtint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
                })}})}})}}
-           </image>{{CUT($plex_sectionsposition::Top=|Bottom=|Flow=CUT|Middle=))}}
+           </image>{{CUT($plex_sectionsposition::Top=|Flow=CUT))}}
+           
            <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=630|1080=945)}}, 0" required="true">
                {{URL(:/fanartcache/{{getBackground({{EVAL({\
                'template'    : "plex",\
@@ -38,7 +39,7 @@
                'titleColor'  : "{{VAL($plex_titlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
                'layers'      : ["PlexLibraryFlow{{VAL($plex_gridtint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
                })}})}})}}
-           </image>{{CUT($plex_sectionsposition::Top=CUT|Bottom=CUT|Flow=|Middle=CUT))}}
+           </image>{{CUT($plex_sectionsposition::Top=CUT|Flow=))}}
 	   </imageHeader>
 
       </header>
@@ -193,7 +194,7 @@
             
           </showcasePoster>{{CUT($plex_library_search::Show=|Hide=CUT)}} 
         </items>
-      </showcase>{{CUT($plex_sectionsposition::Top=CUT|Bottom=CUT|Flow=|Middle=CUT))}}         
+      </showcase>{{CUT($plex_sectionsposition::Top=CUT|Flow=))}}         
 
 
 
@@ -242,10 +243,10 @@
                 </items>
               </shelfSection>
             </sections>
-          </shelf> {{CUT($plex_sectionsposition::Top=|Bottom=CUT|Flow=CUT|Middle=CUT))}} 
+          </shelf> {{CUT($plex_sectionsposition::Top=|Flow=CUT))}} 
           <collectionDivider alignment="left" accessibilityLabel="Show_Bookcase_Divider">
             <title></title>
-          </collectionDivider>{{CUT($plex_sectionsposition::Top=|Bottom=CUT|Flow=CUT|Middle=CUT))}}
+          </collectionDivider>{{CUT($plex_sectionsposition::Top=|Flow=CUT))}}
         </__COPY__>  
 
             

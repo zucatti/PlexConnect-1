@@ -13,6 +13,7 @@
     {{VAR(items:NoKey:FALSE)}}  <!--this sets the var to FALSE-->
 
     <scroller id="com.sample.movie-showcase-grid">
+    
       <header>
         <imageHeader>
 	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=590|1080=885)}}, 0" required="true">
@@ -32,10 +33,12 @@
       </header>
       
       <items>
+        
         <collectionDivider alignment="left" accessibilityLabel="On Deck">
           {{CUT(@OnDeck/size:CUT:0=CUT|1=)}}
           <title>{{TEXT(On Deck)}}</title>
         </collectionDivider>
+        
         <shelf id="shelf_0" columnCount="5">
           {{CUT(@OnDeck/size:CUT:0=CUT|1=)}}
           <sections>
@@ -57,11 +60,11 @@
           </sections>
         </shelf>        
         
-
         <collectionDivider alignment="left" accessibilityLabel="Recently Added">
           {{CUT(@RecentlyAdded/size:CUT:0=CUT|1=)}}
           <title>{{TEXT(Recently Added)}}</title>
         </collectionDivider>
+        
         <shelf id="shelf_1" columnCount="5">
           {{CUT(@RecentlyAdded/size:CUT:0=CUT|1=)}}
           <sections>
@@ -83,12 +86,11 @@
           </sections>
         </shelf>
         
-        
-
         <collectionDivider alignment="left" accessibilityLabel="Recently Released">
           {{CUT(@RecentlyReleased/size:CUT:0=CUT|1=)}}
           <title>{{TEXT(Recently Released)}}</title>
         </collectionDivider>
+        
         <shelf id="shelf_2" columnCount="5">
           {{CUT(@RecentlyReleased/size:CUT:0=CUT|1=)}}
           <sections>
