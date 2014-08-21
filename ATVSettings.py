@@ -21,6 +21,7 @@ options = { \
     'plex_movieview'                :('Flow', 'Paged Grid', 'Grid', 'List', 'Detailed List'), \
     'plex_homevideoview'            :('Flow', 'Paged Grid', 'Grid', 'List', 'Detailed List'), \
     'plex_showview'                 :('Flow', 'Paged Grid', 'Grid', 'List', 'Bookcase'), \
+    'plex_episodeview'              :('List', 'Paged Grid'), \
     'plex_channelview'              :('Grid', 'List', 'Bookcase'), \
     'plex_sectionicons'              :('Fanart', 'Apple', 'Plex', 'Custom'), \
     'plex_sectionicons_shared'       :('Fanart', 'Apple', 'Plex'), \
