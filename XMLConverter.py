@@ -308,7 +308,7 @@ def XML_PMS2aTV(PMS_address, path, options):
         if template == "default":
           XMLtemplate = 'EpisodePrePlay.xml'
         else:
-          XMLtemplate = 'TVShow/Episode/PrePlay.xml'
+          XMLtemplate = 'TVShow/PrePlay.xml'
         
     elif cmd=='ChannelPrePlay':
         if template == "default":
@@ -715,7 +715,9 @@ def XML_PMS2aTV(PMS_address, path, options):
               XMLtemplate = 'Episode.xml'  
             else:
               # TV Episode view
-              XMLtemplate = 'TVShow/Episode/List.xml'
+              XMLtemplate = 'TVShow/Episode/'+g_ATVSettings.getSetting(UDID, template+'_episodeview').replace(' ','')+'.xml'
+              
+              
     
     elif PMSroot.get('viewGroup','')=='photo' or \
        path.startswith('/photos') or \
