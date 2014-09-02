@@ -10,6 +10,10 @@
           <title>{{VAL($plex_mainmenulabel::Icons=&#9409;|Text={{TEXT(Library)}}|Icons and Text=&#9409; {{TEXT(Library)}})}}</title><!-- &#8614; -->
           <url>{{URL(:/PMS(owned)/library/sections)}}</url>
         </navigationItem>
+        <navigationItem id="Playlists">{{CUT($myplex_auth:CUT:=CUT| =)}}
+          <title>{{TEXT(Playlists)}}</title>
+          <url>{{URL(:/PMS(all)/playlists&amp;PlexConnect=Playlists)}}</url>
+        </navigationItem>
         <!--<navigationItem id="Search">
 		  <url>{{URL(:/&amp;PlexConnect=GlobalSearch)}}</url> 
 		  <title>Search</title>

@@ -108,8 +108,11 @@ atv.player.didStopPlaying = function()
                       '&X-Plex-Device-Name=' + encodeURIComponent(atv.device.displayName) +
                       token );
     
-  // Kill the session.
-  loadPage(baseURL + '/video/:/transcode/universal/stop?session=' + atv.device.udid);
+  // Kill the transcoder session.
+  if (isTranscoding)
+  {
+    loadPage(baseURL + '/video/:/transcode/universal/stop?session=' + atv.device.udid);
+  }
 };
 
 /*
@@ -277,9 +280,8 @@ atv.player.willStartPlaying = function()
   containerView.subviews = Views;
   atv.player.overlay = containerView;
   //atv.player.overlay.subviews = Views;
-  
-  remainingTime = 0; // Reset remaining time
-  
+
+
   log('willStartPlaying done');
 };
 

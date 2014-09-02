@@ -71,6 +71,10 @@
               </horizontalDivider>
             </header>
             <items>
+            <oneLineMenuItem id="Template" onSelect="switchTemplate();">
+                <label>{{TEXT(Template)}}</label>
+                <rightLabel>{{SETTING(template)}}</rightLabel>
+              </oneLineMenuItem>
               <oneLineMenuItem id="Top Level" onSelect="atv.loadURL('{{URL(:/)}}&amp;PlexConnect=SettingsTopLevel')">
                 <label>{{TEXT(Top Level Options)}}</label>
                 <accessories>

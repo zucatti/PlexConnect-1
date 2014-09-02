@@ -366,6 +366,15 @@ def XML_PMS2aTV(PMS_address, path, options):
          XMLtemplate = 'TVSection.xml'
        else:
          XMLtemplate = 'TVShow/Section/'+g_ATVSettings.getSetting(UDID, template+'_showview').replace(' ','')+'.xml' 
+        
+    elif cmd == 'Extras':
+         XMLtemplate = 'Extras.xml'
+         
+    elif cmd=='Playlists':
+        XMLtemplate = 'Playlists.xml'
+    
+    elif cmd=='Playlist_Video':
+        XMLtemplate = 'Playlist_Video.xml'     
     
     elif cmd == 'LibraryOnDeck':
        if template == "default":

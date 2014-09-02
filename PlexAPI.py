@@ -416,13 +416,12 @@ def getXMLFromMultiplePMS(ATV_udid, path, type, options={}):
     root = etree.Element("MediaConverter")
     root.set('friendlyName', type+' Servers')
     
-    if type=='owned':
-        owned='1'
-    elif type=='shared':
-        owned='0'
-    
     for uuid in g_PMS.get(ATV_udid, {}):
-        if getPMSProperty(ATV_udid, uuid, 'owned')==owned:
+        if (type=='all') or \
+           (type=='owned' and getPMSProperty(ATV_udid, uuid, 'owned')=='1') or \
+           (type=='shared' and getPMSProperty(ATV_udid, uuid, 'owned')=='0') or \
+           (type=='local' and getPMSProperty(ATV_udid, uuid, 'local')=='1') or \
+           (type=='remote' and getPMSProperty(ATV_udid, uuid, 'local')=='0'):
             Server = etree.SubElement(root, 'Server')  # create "Server" node
             Server.set('name',    getPMSProperty(ATV_udid, uuid, 'name'))
             Server.set('address', getPMSProperty(ATV_udid, uuid, 'ip'))
@@ -461,39 +460,46 @@ def getXMLFromMultiplePMS(ATV_udid, path, type, options={}):
             if XML==False:
                 Server.set('size',    '0')
             else:
-              Server.set('size',    XML.getroot().get('size', '0'))
-              
-              for Dir in XML.getiterator('Directory'):  # copy "Directory" content, add PMS to links
-                key = Dir.get('key')  # absolute path
-                Dir.set('key',    PMS_mark + getURL('', path, key))
-                Dir.set('refreshKey', getURL(baseURL, path, key) + '/refresh')
-                if 'thumb' in Dir.attrib:
-                  Dir.set('thumb',  PMS_mark + getURL('', path, Dir.get('thumb')))
-                if 'grandparentThumb' in Dir.attrib:
-                  Dir.set('grandparentThumb',  PMS_mark + getURL('', path, Dir.get('grandparentThumb'))) 
-                if 'grandparentKey' in Dir.attrib:
-                  Dir.set('grandparentKey',  PMS_mark + getURL('', path, Dir.get('grandparentKey')))
-                if 'parentThumb' in Dir.attrib:
-                  Dir.set('parentThumb',  PMS_mark + getURL('', path, Dir.get('parentThumb')))
-                if 'art' in Dir.attrib:
-                  Dir.set('art',    PMS_mark + getURL('', path, Dir.get('art')))
-                Server.append(Dir)
+                Server.set('size',    XML.getroot().get('size', '0'))
                 
-              for Video in XML.getiterator('Video'):
-                key = Video.get('key')
-                Video.set('key',    PMS_mark + getURL('', path, key))
-                Video.set('refreshKey', getURL(baseURL, path, key) + '/refresh')
-                if 'thumb' in Video.attrib:
-                  Video.set('thumb',  PMS_mark + getURL('', path, Video.get('thumb')))
-                if 'grandparentThumb' in Video.attrib:
-                  Video.set('grandparentThumb',  PMS_mark + getURL('', path, Video.get('grandparentThumb')))
-                if 'grandparentKey' in Video.attrib:
-                  Video.set('grandparentKey',  PMS_mark + getURL('', path, Video.get('grandparentKey')))
-                if 'parentThumb' in Video.attrib:
-                  Video.set('parentThumb',  PMS_mark + getURL('', path, Video.get('parentThumb')))
-                if 'art' in Video.attrib:
-                  Video.set('art',    PMS_mark + getURL('', path, Video.get('art')))
-                Server.append(Video)
+                for Dir in XML.getiterator('Directory'):  # copy "Directory" content, add PMS to links
+                    key = Dir.get('key')  # absolute path
+                    Dir.set('key',    PMS_mark + getURL('', path, key))
+                    Dir.set('refreshKey', getURL(baseURL, path, key) + '/refresh')
+                    if 'thumb' in Dir.attrib:
+                      Dir.set('thumb',  PMS_mark + getURL('', path, Dir.get('thumb')))
+                    if 'grandparentThumb' in Dir.attrib:
+                      Dir.set('grandparentThumb',  PMS_mark + getURL('', path, Dir.get('grandparentThumb'))) 
+                    if 'grandparentKey' in Dir.attrib:
+                      Dir.set('grandparentKey',  PMS_mark + getURL('', path, Dir.get('grandparentKey')))
+                    if 'parentThumb' in Dir.attrib:
+                      Dir.set('parentThumb',  PMS_mark + getURL('', path, Dir.get('parentThumb')))
+                    if 'art' in Dir.attrib:
+                      Dir.set('art',    PMS_mark + getURL('', path, Dir.get('art')))
+                    Server.append(Dir)
+                
+                for Playlist in XML.getiterator('Playlist'):  # copy "Playlist" content, add PMS to links
+                    key = Playlist.get('key')  # absolute path
+                    Playlist.set('key',    PMS_mark + getURL('', path, key))
+                    if 'composite' in Playlist.attrib:
+                      Playlist.set('composite', PMS_mark + getURL('', path, Playlist.get('composite')))
+                    Server.append(Playlist)
+                    
+                for Video in XML.getiterator('Video'):  # copy "Video" content, add PMS to links
+                    key = Video.get('key')  # absolute path
+                    Video.set('key',    PMS_mark + getURL('', path, key))
+                    Video.set('refreshKey', getURL(baseURL, path, key) + '/refresh')
+                    if 'thumb' in Video.attrib:
+                        Video.set('thumb',  PMS_mark + getURL('', path, Video.get('thumb')))                    
+                    if 'grandparentThumb' in Video.attrib:
+                        Video.set('grandparentThumb',  PMS_mark + getURL('', path, Video.get('grandparentThumb'))) 
+                    if 'grandparentKey' in Video.attrib:
+                        Video.set('grandparentKey',  PMS_mark + getURL('', path, Video.get('grandparentKey')))                    
+                    if 'parentThumb' in Video.attrib:
+                        Video.set('parentThumb',  PMS_mark + getURL('', path, Video.get('parentThumb')))
+                    if 'art' in Video.attrib:
+                        Video.set('art',    PMS_mark + getURL('', path, Video.get('art')))
+                    Server.append(Video)
     
     root.set('size', str(len(root.findall('Server'))))
     
@@ -716,6 +722,7 @@ def getTranscodeImagePath(key, AuthToken, path, width, height):
     
     # This is bogus (note the extra path component) but ATV is stupid when it comes to caching images, it doesn't use querystrings.
     # Fortunately PMS is lenient...
+    # transcodePath = '/photo/:/transcode/' + quote_plus(path)
     transcodePath = '/photo/:/transcode/' +str(width)+'x'+str(height)+ '/' + quote_plus(path)
     
     args = dict()

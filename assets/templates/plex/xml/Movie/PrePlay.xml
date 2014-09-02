@@ -104,7 +104,7 @@
 
 
       <centerShelf>
-        <shelf id="centerShelf" columnCount="4" center="true">
+        <shelf id="centerShelf" columnCount="5" center="true">
           <sections>
             <shelfSection>
               <items>
@@ -122,6 +122,15 @@
                   <focusedImage>resource://PreviewFocused.png</focusedImage>
                   <!--<badge></badge>-->
                 </actionButton>
+                <actionButton id="{{VAL(key)}}"
+                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Extras')"
+                             onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Extras')"
+                             onHoldSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Extras')">
+                  <title>{{TEXT(Extras)}}</title>
+                  <image>resource://More.png</image>
+                  <focusedImage>resource://MoreFocused.png</focusedImage>
+                  <!--<badge></badge>-->
+                </actionButton>{{CUT(Video/Extras/Video/ratingKey:CUT:=)}}
                 <actionButton id="selectAudioAndSubs"
                                onHoldSelect="selectAudioAndSubs('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(Video/Media/Part/id)}}')"
                               onSelect="selectAudioAndSubs('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(Video/Media/Part/id)}}')"
@@ -131,14 +140,7 @@
                   <focusedImage>resource://QueueFocused.png</focusedImage>
                 </actionButton>
                 
-                <actionButton id="scrobbleMenu" 
-                				onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
-                  <title>{{TEXT(Watch Status)}}</title>
-                  <image>resource://More.png</image>
-                  <focusedImage>resource://MoreFocused.png</focusedImage>
-                  <!--<badge></badge>-->
-                </actionButton>
-                
+                                
                   <!--Setting Button Edit -->
                 
                 <actionButton id="Settings" onSelect="atv.loadURL('{{URL(:/)}}&amp;PlexConnect=Settings')">
@@ -147,8 +149,7 @@
                   <focusedImage>resource://WishListFocused.png</focusedImage>
                   <!--<badge></badge>-->
                 </actionButton>
-                
- 
+         
                 
                 <actionButton id="more" accessibilityLabel="More info" onSelect="atv.showMoreInfo();" onPlay="atv.showMoreInfo();">
                   <title>{{TEXT(More)}}</title>
@@ -187,7 +188,7 @@
               <items>
               <moviePoster related="true" alwaysShowTitles="true" id="{{VAL(key)}}"
                            onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                           onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')">
+                           onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')">
                   {{COPY(@parent/Video)}}
                   <title>{{VAL(title)}}</title>
                   <subtitle>{{VAL(year)}}</subtitle>

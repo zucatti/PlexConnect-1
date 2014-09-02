@@ -28,14 +28,12 @@
       <items>
                <pagedGrid id="paged-grid-0">
 
-               <fourByThreePoster id="{{VAL(key)}}" featured="true" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
+               <fourByThreePoster id="{{VAL(key)}}" featured="true" alwaysShowTitles="true"
                              onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
                              onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=EpisodePrePlay')"
                              onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                  {{PAGEDCOPY(Video,4,2)}}
                  <title>{{VAL(index)}}. {{VAL(title)}}</title>
-                 <subtitle>{{VAL(title1)}}</subtitle>
-                 
                  <image>{{IMAGEURL(thumb::384)}}</image>
                  <defaultImage>resource://Poster.png</defaultImage>
                </fourByThreePoster>
