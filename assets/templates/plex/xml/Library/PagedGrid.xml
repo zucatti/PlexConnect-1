@@ -268,7 +268,7 @@
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{PAGEDCOPY(@OnDeck/Server/Video,6,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
-                  <title>{{VAL(type::movie={{VAL(title)}}|episode={{VAL(title)}})}}</title>
+                  <title>{{VAL(type::movie={{VAL(title)}}|episode={{VAL(title)}})}} </title>
                   <subtitle>{{VAL(type::movie={{VAL(year)}}|episode={{episodestring(parentIndex:0:index:0)}})}}</subtitle>
                   <image>{{IMAGEURL({{VAL(type::movie=thumb|episode=grandparentThumb)}}::384)}}</image>
                   <defaultImage>resource://Poster.png</defaultImage>
