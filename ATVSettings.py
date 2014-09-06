@@ -10,7 +10,7 @@ from Debug import *  # dprint()
 
 
 options = { \
-    'template'                      :('Default', 'Plex'), \
+    'template'                      :('default', 'Plex'), \
 #TemplateSettings
 
     
