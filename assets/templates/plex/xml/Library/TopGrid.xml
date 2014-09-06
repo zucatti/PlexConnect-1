@@ -57,7 +57,6 @@
                     <image>{{IMAGEURL(art::768)}}</image>{{CUT($plex_sectionicons::Apple=CUT|Plex=CUT|Fanart=|Custom=CUT)}}
                     <image>{{URL(:/templates/plex/images/icons/{{VAL(type)}}.png)}}</image>{{CUT($plex_sectionicons::Apple=|Plex=CUT|Fanart=CUT|Custom=CUT)}}
                     <image>{{IMAGEURL(thumb::768)}}</image>{{CUT($plex_sectionicons::Apple=CUT|Plex=|Fanart=CUT|Custom=CUT)}}
-                    <image>{{URL(:/templates/plex/images/custom/top/{{EVAL("{{VAL(title)}}".replace(' ', ''))}}.png)}}</image>{{CUT($plex_sectionicons::Apple=CUT|Plex=CUT|Fanart=CUT|Custom=)}}
                     <defaultImage>resource://16X9.png</defaultImage>
                     <!--badgeCount></badgeCount-->
                   </moviePoster>
@@ -74,9 +73,6 @@
                 </shelfSection>
           </sections>
         </shelf> 
-        <collectionDivider alignment="left" accessibilityLabel="Show_Bookcase_Divider">
-            <title></title>
-          </collectionDivider>
         </__COPY__>
         
         
@@ -92,7 +88,7 @@
               <items>
                 <fourByThreePoster id="{{VAL(key)}}" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($plex_showtitles_library::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect={{VAL(type::movie=Movie|episode=Episode)}}PrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect={{VAL(type::movie=Movie|episode=Episode)}}PrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{COPY(@OnDeck/Server/Video)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
@@ -118,7 +114,7 @@
               <items>
                 <fourByThreePoster id="{{VAL(key)}}" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($plex_showtitles_library::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect={{VAL(type::movie=MoviePrePlay|episode=EpisodePrePlay|season=season)}}')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect={{VAL(type::movie=MoviePrePlay|episode=EpisodePrePlay|season=season)}}')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{COPY(@RecentlyAdded/Server/Video,Directory)}}
                   {{VAR(items:NoKey:TRUE)}} 

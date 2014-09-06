@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plex Connect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 18:43:27+0000\n"
-"PO-Revision-Date: 2014-07-03 23:15+0000\n"
+"POT-Creation-Date: 2013-11-21 12:07:07+0000\n"
+"PO-Revision-Date: 2013-12-07 12:16+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nb\n"
@@ -34,10 +34,6 @@ msgstr "Alle bilder"
 
 msgid "All Shows"
 msgstr "Alle TV-programmer"
-
-
-msgid "All Videos"
-msgstr ""
 
 
 msgid "Aperture"
@@ -108,19 +104,7 @@ msgid "Camera Model"
 msgstr "Kameramodell"
 
 
-msgid "Change All Artwork"
-msgstr ""
-
-
 msgid "Change Artwork"
-msgstr ""
-
-
-msgid "Channel Search"
-msgstr ""
-
-
-msgid "Channel View"
 msgstr ""
 
 
@@ -134,6 +118,10 @@ msgstr "Klokkeposisjon"
 
 msgid "Collections"
 msgstr "Samlinger"
+
+
+msgid "Current Artwork"
+msgstr ""
 
 
 msgid "Decades"
@@ -164,15 +152,15 @@ msgid "Enter the MyPlex password for {0}."
 msgstr "Skriv inn MyPlex-passordet til {0}"
 
 
+msgid "Episode"
+msgstr "Episode"
+
+
 msgid "Episodes"
 msgstr "Episoder"
 
 
 msgid "Failed"
-msgstr ""
-
-
-msgid "Flatten Season"
 msgstr ""
 
 
@@ -186,18 +174,6 @@ msgstr "Sjanger"
 
 msgid "Genres"
 msgstr "Sjangre"
-
-
-msgid "Home Video Options"
-msgstr ""
-
-
-msgid "Home Video View"
-msgstr ""
-
-
-msgid "Home Videos Navigation Bar"
-msgstr ""
 
 
 msgid "Homepage"
@@ -220,8 +196,8 @@ msgid "Library"
 msgstr "Bibliotek"
 
 
-msgid "Library View"
-msgstr ""
+msgid "Library Refresh in Progress."
+msgstr "Bibliotekoppdatering pågår."
 
 
 msgid "Mark as Unwatched"
@@ -240,6 +216,10 @@ msgid "More..."
 msgstr "Mer..."
 
 
+msgid "Movie"
+msgstr "Film"
+
+
 msgid "Movie Navigation Bar"
 msgstr "Navigasjonsfelt for filmer"
 
@@ -254,6 +234,10 @@ msgstr "Filmvisning"
 
 msgid "Movies"
 msgstr "Filmer"
+
+
+msgid "MyPlex"
+msgstr "MyPlex"
 
 
 msgid "MyPlex Password"
@@ -304,16 +288,20 @@ msgid "On Deck"
 msgstr "Pågående"
 
 
+msgid "On Deck Episode"
+msgstr "Pågående episode"
+
+
+msgid "On Deck Movie"
+msgstr "Pågående film"
+
+
 msgid "Overscan Adjust"
 msgstr "Justér overscan"
 
 
 msgid "Photo"
 msgstr "Bilde"
-
-
-msgid "Photo Transcoder Action"
-msgstr ""
 
 
 msgid "Play"
@@ -340,8 +328,8 @@ msgid "PlexConnect"
 msgstr "PlexConnect"
 
 
-msgid "Poster Titles"
-msgstr ""
+msgid "Press menu to return."
+msgstr "Trykk på menyknappen for å gå tilbake."
 
 
 msgid "Producers"
@@ -352,16 +340,32 @@ msgid "Recently Added"
 msgstr "Nylig lagt til"
 
 
+msgid "Recently Added Movie"
+msgstr "Nye filmer"
+
+
 msgid "Recently Aired"
 msgstr "Nylig vist"
+
+
+msgid "Recently Aired Episode"
+msgstr "Nye episoder"
 
 
 msgid "Recently Released"
 msgstr "Nylig utgitt"
 
 
+msgid "Recently Released Movie"
+msgstr "Filmer nylig utgitt"
+
+
 msgid "Recently Viewed"
 msgstr "Nylig sett"
+
+
+msgid "Recently Viewed Episode"
+msgstr "Nylig sett episode"
 
 
 msgid "Recently Viewed Episodes"
@@ -372,8 +376,8 @@ msgid "Recently Viewed Shows"
 msgstr "Nylig viste programmer"
 
 
-msgid "Refresh"
-msgstr ""
+msgid "Refresh Library"
+msgstr "Oppdater bibliotek"
 
 
 msgid "Remote Bitrate"
@@ -382,6 +386,10 @@ msgstr "Ekstern bitrate"
 
 msgid "Search"
 msgstr "Søk"
+
+
+msgid "Season"
+msgstr "Sesong"
 
 
 msgid "Season View"
@@ -400,8 +408,8 @@ msgid "Settings"
 msgstr "Innstillinger"
 
 
-msgid "Shared Libraries"
-msgstr ""
+msgid "Show"
+msgstr "Vis"
 
 
 msgid "Show Clock"
@@ -430,18 +438,6 @@ msgstr "Lukkerhastighet"
 
 msgid "SlideShow"
 msgstr "Lysbildefremvisning"
-
-
-msgid "Studio"
-msgstr ""
-
-
-msgid "Subs"
-msgstr ""
-
-
-msgid "Subtitle Renderer"
-msgstr ""
 
 
 msgid "Subtitle Size %"
@@ -478,10 +474,6 @@ msgstr "Tidsformat"
 
 msgid "To sign in to MyPlex, enter your Email address, username or Plex forum username."
 msgstr "For å logge inn på MyPlex, skriv inn din epostadresse, MyPlex-brukernavn eller brukernavn fra Plexforumet."
-
-
-msgid "Top Level Options"
-msgstr ""
 
 
 msgid "Trailer"
@@ -536,14 +528,6 @@ msgid "Year"
 msgstr "År"
 
 
-msgid "refreshing"
-msgstr ""
-
-
-msgid "remote"
-msgstr ""
-
-
 msgid "{0:0d}x{1:02d} {2}"
 msgstr "{0:0d}x{1:02d} {2}"
 
@@ -558,4 +542,5 @@ msgstr "{0:d}t {1:d}min"
 
 msgid "{0} unwatched"
 msgstr "{0} usette"
+
 

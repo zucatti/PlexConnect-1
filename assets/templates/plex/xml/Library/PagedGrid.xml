@@ -264,7 +264,7 @@
              <items>-->
                <fourByThreePoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($plex_showtitles_library::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect={{VAL(type::movie=Movie|episode=Episode)}}PrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect={{VAL(type::movie=Movie|episode=Episode)}}PrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{PAGEDCOPY(@OnDeck/Server/Video,6,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
@@ -292,7 +292,7 @@
               
                   <fourByThreePoster id="{{VAL(key)}}" accessibilityLabel="{{VAL(title)}}" featured="true" alwaysShowTitles="{{VAL($plex_showtitles_library::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect={{VAL(type::movie=MoviePrePlay|season=season)}}')"   
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect={{VAL(type::movie=MoviePrePlay|season=season)}}')"   
                             onHoldSelect="scrobbleMenu('{{stripChildrenURL(key)}}&amp;PlexConnect=ScrobbleMenu{{VAL(type::movie=Video|episode=Video|season=Directory)}}')">
                   {{PAGEDCOPY(@RecentlyAdded/Server/Video,6,1,Directory)}}
                   {{VAR(items:NoKey:TRUE)}} 

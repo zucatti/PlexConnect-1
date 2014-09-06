@@ -135,6 +135,23 @@ atv.player.willStartPlaying = function()
     lastReportedTime = -1;
     lastTranscoderPingTime = -1;
     remainingTime = 0;  // reset remaining time
+    
+    // get baseURL, OSD settings, ...
+    var videoPlayerSettings = atv.player.asset.getElementByTagName('videoPlayerSettings');
+    if (videoPlayerSettings != null)
+    {
+        baseURL = getTextContent(videoPlayerSettings.getElementByTagName('baseURL'));
+        accessToken = getTextContent(videoPlayerSettings.getElementByTagName('accessToken'));
+        
+        showClock = getTextContent(videoPlayerSettings.getElementByTagName('showClock'));
+        timeFormat = getTextContent(videoPlayerSettings.getElementByTagName('timeFormat'));
+        clockPosition = getTextContent(videoPlayerSettings.getElementByTagName('clockPosition'));
+        overscanAdjust = getTextContent(videoPlayerSettings.getElementByTagName('overscanAdjust'));
+        showEndtime = getTextContent(videoPlayerSettings.getElementByTagName('showEndtime'));
+        
+        subtitleSize = getTextContent(videoPlayerSettings.getElementByTagName('subtitleSize'));
+        log('willStartPlaying/getVideoPlayerSettings done');
+    }
   
   // mediaURL and myMetadata
   var url = atv.player.asset.getElementByTagName('mediaURL').textContent;
@@ -280,8 +297,9 @@ atv.player.willStartPlaying = function()
   containerView.subviews = Views;
   atv.player.overlay = containerView;
   //atv.player.overlay.subviews = Views;
-
-
+  
+  remainingTime = 0; // Reset remaining time
+  
   log('willStartPlaying done');
 };
 

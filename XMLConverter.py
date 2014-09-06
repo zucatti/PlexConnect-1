@@ -368,13 +368,24 @@ def XML_PMS2aTV(PMS_address, path, options):
          XMLtemplate = 'TVShow/Section/'+g_ATVSettings.getSetting(UDID, template+'_showview').replace(' ','')+'.xml' 
         
     elif cmd == 'Extras':
+       if template == "default":
+         XMLtemplate = 'Extras.xml'
+       else:
          XMLtemplate = 'Extras.xml'
          
+         
     elif cmd=='Playlists':
+       if template == "default":
         XMLtemplate = 'Playlists.xml'
+       else:
+        XMLtemplate = 'Playlists.xml'
+       
     
     elif cmd=='Playlist_Video':
-        XMLtemplate = 'Playlist_Video.xml'     
+       if template == "default":
+        XMLtemplate = 'Playlist_Video.xml'
+       else:
+        XMLtemplate = 'Playlist_Video.xml'
     
     elif cmd == 'LibraryOnDeck':
        if template == "default":
@@ -951,7 +962,7 @@ class CCommandHelper():
         if 'PlexConnect' in options:
           if options['PlexConnect'] == 'Settings': 
             template = g_ATVSettings.getSetting(options['PlexConnectUDID'], 'template')
-            if (template=='default' or template == 'galaxy'):
+            if (template=='default' or template == 'plex'):
               self.PC_MenuIndex = 3
             else:
               self.PC_MenuIndex = 4

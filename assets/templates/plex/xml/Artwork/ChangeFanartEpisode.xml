@@ -31,7 +31,7 @@
             <shelfSection>
               <items>
                 <fourByThreePoster related="true" featured="true" id="{{VAL(Video/ratingKey)}}" 
-                              onSelect="changeFanart('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(#key)}}', '{{VAL(key)}}' , '', '{{URL(:/library/metadata/{{VAL(#key)}})}}&amp;PlexConnect=ChangeFanartEpisode')">
+                              onSelect="changeFanart('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(#key)}}', '{{VAL(key)}}' , '', '{{URL(:/library/metadata/{{VAL(#key)}})}}&amp;PlexConnect=ChangeFanartEpisode');atv.unloadPage();">
                   {{COPY(@arts/Photo)}}
                   <title> </title>
                   <image>{{IMAGEURL(thumb::384)}}</image>

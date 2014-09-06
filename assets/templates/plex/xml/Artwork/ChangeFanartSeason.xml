@@ -30,7 +30,7 @@
             <shelfSection>
               <items>
                 <sixteenByNinePoster related="true" featured="true" id="{{VAL(key)}}"
-                              onSelect="changeFanart('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(#key)}}', '{{VAL(key)}}' , '', '{{URL(:/library/metadata/{{VAL(#key)}})}}&amp;PlexConnect=ChangeFanartSeason')">
+                              onSelect="changeFanart('{{VAL(%baseURL)}}', '{{VAL(%accesstoken)}}', '{{VAL(#key)}}', '{{VAL(key)}}' , '', '{{URL(:/library/metadata/{{VAL(#key)}})}}&amp;PlexConnect=ChangeFanartSeason');atv.unloadPage();">
                   {{COPY(@arts/Photo)}}
                   <title></title>
                   <image>{{IMAGEURL(thumb:384)}}</image>

@@ -482,7 +482,7 @@ def getXMLFromMultiplePMS(ATV_udid, path, type, options={}):
                     key = Playlist.get('key')  # absolute path
                     Playlist.set('key',    PMS_mark + getURL('', path, key))
                     if 'composite' in Playlist.attrib:
-                      Playlist.set('composite', PMS_mark + getURL('', path, Playlist.get('composite')))
+                        Playlist.set('composite', PMS_mark + getURL('', path, Playlist.get('composite')))
                     Server.append(Playlist)
                     
                 for Video in XML.getiterator('Video'):  # copy "Video" content, add PMS to links

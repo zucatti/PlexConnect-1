@@ -40,7 +40,7 @@
             <items>
               <twoLineMenuItem id="{{VAL(key)}}"
                                        onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                                       onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect={{VAL(type::movie=MoviePrePlay|episode=EpisodePrePlay|season=season)}}')"
+                                       onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect={{VAL(type::movie=MoviePrePlay|episode=EpisodePrePlay|season=season)}}')"
                                        onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                 {{COPY(@RecentlyAdded/Server/Directory,Video)}}
                 {{VAR(items:NoKey:TRUE)}}              

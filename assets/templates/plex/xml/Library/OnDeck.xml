@@ -40,7 +40,7 @@
             <items>
               <twoLineMenuItem id="{{VAL(key)}}"
                                        onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                                       onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect={{VAL(type::movie=Movie|episode=Episode)}}PrePlay')"
+                                       onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect={{VAL(type::movie=Movie|episode=Episode)}}PrePlay')"
                                        onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                 {{COPY(@OnDeck/Server/Video)}}
                 {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->

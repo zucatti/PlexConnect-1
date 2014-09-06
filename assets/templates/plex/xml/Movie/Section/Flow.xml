@@ -13,7 +13,6 @@
     {{VAR(items:NoKey:FALSE)}}  <!--this sets the var to FALSE-->
 
     <scroller id="com.sample.movie-showcase-grid">
-    
       <header>
         <imageHeader>
 	      <image insets="0, 0, {{VAL(^aTVScreenResolution:1:720=590|1080=885)}}, 0" required="true">
@@ -33,12 +32,10 @@
       </header>
       
       <items>
-        
         <collectionDivider alignment="left" accessibilityLabel="On Deck">
           {{CUT(@OnDeck/size:CUT:0=CUT|1=)}}
           <title>{{TEXT(On Deck)}}</title>
         </collectionDivider>
-        
         <shelf id="shelf_0" columnCount="5">
           {{CUT(@OnDeck/size:CUT:0=CUT|1=)}}
           <sections>
@@ -46,7 +43,7 @@
               <items>
                 <goldenPoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{COPY(@OnDeck/Video,7,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
@@ -60,11 +57,11 @@
           </sections>
         </shelf>        
         
+
         <collectionDivider alignment="left" accessibilityLabel="Recently Added">
           {{CUT(@RecentlyAdded/size:CUT:0=CUT|1=)}}
           <title>{{TEXT(Recently Added)}}</title>
         </collectionDivider>
-        
         <shelf id="shelf_1" columnCount="5">
           {{CUT(@RecentlyAdded/size:CUT:0=CUT|1=)}}
           <sections>
@@ -72,7 +69,7 @@
               <items>
                 <goldenPoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{COPY(@RecentlyAdded/Video,7,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
@@ -86,11 +83,12 @@
           </sections>
         </shelf>
         
+        
+
         <collectionDivider alignment="left" accessibilityLabel="Recently Released">
           {{CUT(@RecentlyReleased/size:CUT:0=CUT|1=)}}
           <title>{{TEXT(Recently Released)}}</title>
         </collectionDivider>
-        
         <shelf id="shelf_2" columnCount="5">
           {{CUT(@RecentlyReleased/size:CUT:0=CUT|1=)}}
           <sections>
@@ -98,7 +96,7 @@
               <items>
                 <goldenPoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{COPY(@RecentlyReleased/Video,7,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->

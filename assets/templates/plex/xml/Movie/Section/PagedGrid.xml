@@ -41,7 +41,7 @@
 
                 <fourByThreePoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{PAGEDCOPY(@OnDeck/Video,7,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
@@ -61,7 +61,7 @@
              {{CUT(@RecentlyAdded/size:CUT:0=CUT|1=)}}
                 <fourByThreePoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{PAGEDCOPY(@RecentlyAdded/Video,7,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->
@@ -80,7 +80,7 @@
           {{CUT(@RecentlyReleased/size:CUT:0=CUT|1=)}}
                 <fourByThreePoster id="{{VAL(key)}}" featured="true" accessibilityLabel="{{VAL(title)}}" alwaysShowTitles="{{VAL($showtitles_movies::Highlighted Only=false|Show All=true)}}"
                             onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                            onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                            onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                             onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                   {{PAGEDCOPY(@RecentlyReleased/Video,7,1)}}
                   {{VAR(items:NoKey:TRUE)}}  <!--within COPY this sets the var to TRUE-->

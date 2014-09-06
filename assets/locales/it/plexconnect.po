@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plex Connect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 18:43:27+0000\n"
-"PO-Revision-Date: 2014-07-03 23:15+0000\n"
+"POT-Creation-Date: 2013-11-21 12:07:07+0000\n"
+"PO-Revision-Date: 2013-12-07 12:16+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
@@ -34,10 +34,6 @@ msgstr "Tutte le Foto"
 
 msgid "All Shows"
 msgstr "Tutte le Serie"
-
-
-msgid "All Videos"
-msgstr "Tutti i video"
 
 
 msgid "Aperture"
@@ -108,20 +104,8 @@ msgid "Camera Model"
 msgstr "Modello Camera"
 
 
-msgid "Change All Artwork"
-msgstr "Cambia tutte le immagini"
-
-
 msgid "Change Artwork"
-msgstr "Cambia immagine"
-
-
-msgid "Channel Search"
-msgstr "Cerca nei canali"
-
-
-msgid "Channel View"
-msgstr "Vista canale"
+msgstr "Cambia Immagine"
 
 
 msgid "Channels"
@@ -134,6 +118,10 @@ msgstr "Posizione orologio"
 
 msgid "Collections"
 msgstr "Raccolte"
+
+
+msgid "Current Artwork"
+msgstr "Immagine attuale"
 
 
 msgid "Decades"
@@ -164,16 +152,16 @@ msgid "Enter the MyPlex password for {0}."
 msgstr "Inserisci la password myPlex per {0}."
 
 
+msgid "Episode"
+msgstr "Episodio"
+
+
 msgid "Episodes"
 msgstr "Episodi"
 
 
 msgid "Failed"
 msgstr "Fallito"
-
-
-msgid "Flatten Season"
-msgstr "Appiattisci stagione"
 
 
 msgid "Forum"
@@ -186,18 +174,6 @@ msgstr "Genere"
 
 msgid "Genres"
 msgstr "Generi"
-
-
-msgid "Home Video Options"
-msgstr "Opzioni video domestici"
-
-
-msgid "Home Video View"
-msgstr "Vista video domestici"
-
-
-msgid "Home Videos Navigation Bar"
-msgstr "Barra di navigazione home video"
 
 
 msgid "Homepage"
@@ -220,8 +196,8 @@ msgid "Library"
 msgstr "Libreria"
 
 
-msgid "Library View"
-msgstr "Vista libreria"
+msgid "Library Refresh in Progress."
+msgstr "Aggiornamento della Libreria in corso."
 
 
 msgid "Mark as Unwatched"
@@ -240,6 +216,10 @@ msgid "More..."
 msgstr "Altro..."
 
 
+msgid "Movie"
+msgstr "Film"
+
+
 msgid "Movie Navigation Bar"
 msgstr "Barra di navigazione Film"
 
@@ -256,16 +236,20 @@ msgid "Movies"
 msgstr "Film"
 
 
+msgid "MyPlex"
+msgstr "MyPlex"
+
+
 msgid "MyPlex Password"
 msgstr "Password MyPlex"
 
 
 msgid "MyPlex Sign In"
-msgstr "Accesso MyPlex"
+msgstr "Accesso a MyPlex"
 
 
 msgid "MyPlex Sign Out"
-msgstr "Disconnessione MyPlex"
+msgstr "Disconnessione da My Plex"
 
 
 msgid "MyPlex Username"
@@ -304,16 +288,20 @@ msgid "On Deck"
 msgstr "In primo piano"
 
 
+msgid "On Deck Episode"
+msgstr "Episodio in primo piano"
+
+
+msgid "On Deck Movie"
+msgstr "Film in primo piano"
+
+
 msgid "Overscan Adjust"
 msgstr "Correzione overscan"
 
 
 msgid "Photo"
 msgstr "Foto"
-
-
-msgid "Photo Transcoder Action"
-msgstr "Azione convertitore foto"
 
 
 msgid "Play"
@@ -340,8 +328,8 @@ msgid "PlexConnect"
 msgstr "PlexConnect"
 
 
-msgid "Poster Titles"
-msgstr "Titoli dei poster"
+msgid "Press menu to return."
+msgstr "Premere menu per tornare indietro."
 
 
 msgid "Producers"
@@ -352,16 +340,32 @@ msgid "Recently Added"
 msgstr "Aggiunti di recente"
 
 
+msgid "Recently Added Movie"
+msgstr "Film aggiunto di recente"
+
+
 msgid "Recently Aired"
 msgstr "Trasmessi di recente"
+
+
+msgid "Recently Aired Episode"
+msgstr "Episodio trasmesso di recente"
 
 
 msgid "Recently Released"
 msgstr "Usciti di recente"
 
 
+msgid "Recently Released Movie"
+msgstr "Film uscito di recente"
+
+
 msgid "Recently Viewed"
 msgstr "Visti di recente"
+
+
+msgid "Recently Viewed Episode"
+msgstr "Episodio visto di recente"
 
 
 msgid "Recently Viewed Episodes"
@@ -372,8 +376,8 @@ msgid "Recently Viewed Shows"
 msgstr "Serie viste di recente"
 
 
-msgid "Refresh"
-msgstr "Ricarica"
+msgid "Refresh Library"
+msgstr "Aggiorna Libreria"
 
 
 msgid "Remote Bitrate"
@@ -384,12 +388,16 @@ msgid "Search"
 msgstr "Cerca"
 
 
+msgid "Season"
+msgstr "Stagione"
+
+
 msgid "Season View"
 msgstr "Vista Stagione"
 
 
 msgid "Select Artwork"
-msgstr "Seleziona immagine"
+msgstr "Seleziona Immagine"
 
 
 msgid "Select Tracks"
@@ -400,8 +408,8 @@ msgid "Settings"
 msgstr "Impostazioni"
 
 
-msgid "Shared Libraries"
-msgstr "Librerie condivise"
+msgid "Show"
+msgstr "Mostra"
 
 
 msgid "Show Clock"
@@ -430,18 +438,6 @@ msgstr "Tempo di esposizione"
 
 msgid "SlideShow"
 msgstr "Presentazione"
-
-
-msgid "Studio"
-msgstr "Studio"
-
-
-msgid "Subs"
-msgstr "Sottotitoli"
-
-
-msgid "Subtitle Renderer"
-msgstr "Renderer dei sottotitoli"
 
 
 msgid "Subtitle Size %"
@@ -477,11 +473,7 @@ msgstr "Formato orario"
 
 
 msgid "To sign in to MyPlex, enter your Email address, username or Plex forum username."
-msgstr "Per accedere a MyPlex inserisci la tua email o il nome utente."
-
-
-msgid "Top Level Options"
-msgstr "Opzioni livello principale"
+msgstr "Per accedere a MyPlex inserisci la tua email, lo username myPlex o quello del forum."
 
 
 msgid "Trailer"
@@ -536,14 +528,6 @@ msgid "Year"
 msgstr "Anno"
 
 
-msgid "refreshing"
-msgstr "ricaricamento"
-
-
-msgid "remote"
-msgstr "remoto"
-
-
 msgid "{0:0d}x{1:02d} {2}"
 msgstr "{0:0d}x{1:02d} {2}"
 
@@ -558,4 +542,5 @@ msgstr "{0:d} ore {1:d} min"
 
 msgid "{0} unwatched"
 msgstr "{0} non visti"
+
 

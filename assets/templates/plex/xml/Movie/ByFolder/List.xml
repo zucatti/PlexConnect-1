@@ -1,8 +1,12 @@
 <atv>
   <head>
     <script src="{{URL(:/js/utils.js)}}" />
-  </head> 
- <body>
+  </head>
+  
+  
+  
+  
+<body>
     <itemCollectionWithImageHeader id="MovieList" volatile="true" onVolatileReload="atv.loadAndSwapURL('{{URL()}}')">
       <header>
         <imageHeader>
@@ -18,6 +22,7 @@
               'subtitleColor': "{{VAL($plex_subtitlecolor::White=fafafa|Grey=878787|Plex Orange=ff8800|Apple Blue=1357d4)}}",\
               'layers'      : ["PlexSubList{{VAL($plex_paradelisttint::On=Text|Off=)}}"{{VAL($plex_menuhint::On=,"PlexPressMenu_{{VAL($plex_subtitlecolor::White=white|Plex Orange=orange|Apple Blue=blue|Grey=grey)}}"|Off=)}}]\
               })}})}})}}
+              </image>
 	    </imageHeader>
       </header>
 
@@ -41,7 +46,7 @@
               
               <twoLineMenuItem id="{{VAL(key)}}"
                              onPlay="atv.loadURL('{{URL(key)}}&amp;PlexConnect=Play')"
-                             onSelect="atv.loadURL('{{URL(key)}}?includeExtras=1&amp;PlexConnect=MoviePrePlay')"
+                             onSelect="atv.loadURL('{{URL(key)}}&amp;PlexConnect=MoviePrePlay')"
                              onHoldSelect="scrobbleMenu('{{URL(key)}}&amp;PlexConnect=ScrobbleMenuVideo')">
                 {{COPY(Video)}}
                 <label>{{VAL(title)}}</label>

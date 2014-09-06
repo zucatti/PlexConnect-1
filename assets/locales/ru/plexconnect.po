@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Plex Connect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 18:43:27+0000\n"
-"PO-Revision-Date: 2014-07-03 23:15+0000\n"
+"POT-Creation-Date: 2013-11-21 12:07:07+0000\n"
+"PO-Revision-Date: 2013-12-07 12:16+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 ""
 
 msgid "ATV firmware version 5.1 or higher required. Please think about updating."
-msgstr "Требуется версия прошивки ATV 5.1 или выше. Пожалуйста, подумайте об обновлении."
+msgstr ""
 
 
 msgid "Actor View"
@@ -36,12 +36,8 @@ msgid "All Shows"
 msgstr "Все сериалы"
 
 
-msgid "All Videos"
-msgstr "Все видео"
-
-
 msgid "Aperture"
-msgstr "Апертура"
+msgstr ""
 
 
 msgid "Appearance"
@@ -49,7 +45,7 @@ msgstr "Внешний вид"
 
 
 msgid "Audio"
-msgstr "Звук"
+msgstr "Аудио"
 
 
 msgid "Audio Boost %"
@@ -57,11 +53,11 @@ msgstr "Усиление звука %"
 
 
 msgid "Audio Track"
-msgstr "Звуковая дорожка"
+msgstr ""
 
 
 msgid "Audio/Subs"
-msgstr "Звук/Субтитры"
+msgstr "Аудио/Субтитры"
 
 
 msgid "Authors"
@@ -101,27 +97,15 @@ msgstr "По годам"
 
 
 msgid "Camera Make"
-msgstr "Производитель камеры"
+msgstr ""
 
 
 msgid "Camera Model"
-msgstr "Модель камеры"
-
-
-msgid "Change All Artwork"
-msgstr "Изменить все иллюстрации"
+msgstr ""
 
 
 msgid "Change Artwork"
-msgstr "Изменить иллюстрацию"
-
-
-msgid "Channel Search"
-msgstr "Поиск каналов"
-
-
-msgid "Channel View"
-msgstr "Просмотр каналов"
+msgstr ""
 
 
 msgid "Channels"
@@ -129,11 +113,15 @@ msgstr "Каналы"
 
 
 msgid "Clock Position"
-msgstr "Позиция часов"
+msgstr "Позиция для часов"
 
 
 msgid "Collections"
 msgstr "Коллекции"
+
+
+msgid "Current Artwork"
+msgstr ""
 
 
 msgid "Decades"
@@ -145,7 +133,7 @@ msgstr "Подробности"
 
 
 msgid "Director"
-msgstr "Режиссер"
+msgstr "Директор"
 
 
 msgid "Directors"
@@ -157,11 +145,15 @@ msgstr "Узнать"
 
 
 msgid "Duration Format"
-msgstr "Формат длительности"
+msgstr ""
 
 
 msgid "Enter the MyPlex password for {0}."
 msgstr "Введите MyPlex пароль для {0}"
+
+
+msgid "Episode"
+msgstr "Эпизод"
 
 
 msgid "Episodes"
@@ -169,11 +161,7 @@ msgstr "Эпизоды"
 
 
 msgid "Failed"
-msgstr "Не удалось"
-
-
-msgid "Flatten Season"
-msgstr "Убрать сезоны"
+msgstr ""
 
 
 msgid "Forum"
@@ -186,18 +174,6 @@ msgstr "Жанр"
 
 msgid "Genres"
 msgstr "Жанры"
-
-
-msgid "Home Video Options"
-msgstr "Настройки домашнего видео"
-
-
-msgid "Home Video View"
-msgstr "Просмотр домашнего видео"
-
-
-msgid "Home Videos Navigation Bar"
-msgstr "Панель навигации по домашнему видео"
 
 
 msgid "Homepage"
@@ -213,23 +189,23 @@ msgstr "Длительность"
 
 
 msgid "Lens"
-msgstr "Линзы"
+msgstr ""
 
 
 msgid "Library"
 msgstr "Библиотека"
 
 
-msgid "Library View"
-msgstr "Просмотр библиотеки"
+msgid "Library Refresh in Progress."
+msgstr "Идет обновление библиотеки."
 
 
 msgid "Mark as Unwatched"
-msgstr "Отметить как непросмотренное"
+msgstr ""
 
 
 msgid "Mark as Watched"
-msgstr "Отметить как просмотренное"
+msgstr ""
 
 
 msgid "More"
@@ -238,6 +214,10 @@ msgstr "Ещё"
 
 msgid "More..."
 msgstr "Еще..."
+
+
+msgid "Movie"
+msgstr ""
 
 
 msgid "Movie Navigation Bar"
@@ -256,28 +236,32 @@ msgid "Movies"
 msgstr "Фильмы"
 
 
+msgid "MyPlex"
+msgstr ""
+
+
 msgid "MyPlex Password"
-msgstr "MyPlex пароль"
+msgstr ""
 
 
 msgid "MyPlex Sign In"
-msgstr "Войти в MyPlex"
+msgstr ""
 
 
 msgid "MyPlex Sign Out"
-msgstr "Выйти из MyPlex"
+msgstr ""
 
 
 msgid "MyPlex Username"
-msgstr "MyPlex Логин"
+msgstr ""
 
 
 msgid "No Plex Channels Available"
-msgstr "Нет доступных каналов Plex"
+msgstr ""
 
 
 msgid "No Plex Library Sections Available"
-msgstr "Нет доступных разделов библиотеки Plex"
+msgstr ""
 
 
 msgid "No Seasons"
@@ -297,11 +281,19 @@ msgstr "Нет эпизодов"
 
 
 msgid "None"
-msgstr "Пусто"
+msgstr ""
 
 
 msgid "On Deck"
-msgstr "На главной"
+msgstr "Готов к действиям"
+
+
+msgid "On Deck Episode"
+msgstr ""
+
+
+msgid "On Deck Movie"
+msgstr ""
 
 
 msgid "Overscan Adjust"
@@ -312,24 +304,20 @@ msgid "Photo"
 msgstr "Фото"
 
 
-msgid "Photo Transcoder Action"
-msgstr "Действие фото транскодера"
-
-
 msgid "Play"
 msgstr "Воспроизвести"
 
 
 msgid "Plex Channels"
-msgstr "Каналы Plex"
+msgstr ""
 
 
 msgid "Plex Library"
-msgstr "Библиотека Plex"
+msgstr ""
 
 
 msgid "Plex Media Server"
-msgstr "Plex Media Server"
+msgstr "Plex Медиа Сервер"
 
 
 msgid "Plex Media Server: No Items Available"
@@ -337,11 +325,11 @@ msgstr "Plex Media Server: Нет доступных дополнений."
 
 
 msgid "PlexConnect"
-msgstr "PlexConnect"
+msgstr ""
 
 
-msgid "Poster Titles"
-msgstr "Заголовки плакатов"
+msgid "Press menu to return."
+msgstr "Нажмите MENU для возврата"
 
 
 msgid "Producers"
@@ -352,36 +340,56 @@ msgid "Recently Added"
 msgstr "Недавно добавленные"
 
 
+msgid "Recently Added Movie"
+msgstr ""
+
+
 msgid "Recently Aired"
 msgstr "Недавно показанные"
+
+
+msgid "Recently Aired Episode"
+msgstr ""
 
 
 msgid "Recently Released"
 msgstr "Недавно вышедшие"
 
 
+msgid "Recently Released Movie"
+msgstr ""
+
+
 msgid "Recently Viewed"
 msgstr "Недавно просмотренные"
 
 
+msgid "Recently Viewed Episode"
+msgstr ""
+
+
 msgid "Recently Viewed Episodes"
-msgstr "Недавно просмотренные серии"
+msgstr ""
 
 
 msgid "Recently Viewed Shows"
-msgstr "Недавно просмотренные сериалы"
+msgstr "Последние просмотренные сериалы."
 
 
-msgid "Refresh"
-msgstr "Обновить"
+msgid "Refresh Library"
+msgstr "Обновить библиотеку"
 
 
 msgid "Remote Bitrate"
-msgstr "Качество по внешней сети"
+msgstr ""
 
 
 msgid "Search"
 msgstr "Поиск"
+
+
+msgid "Season"
+msgstr "Сезон "
 
 
 msgid "Season View"
@@ -389,19 +397,19 @@ msgstr "Просмотр сезона"
 
 
 msgid "Select Artwork"
-msgstr "Выбрать иллюстрацию"
+msgstr ""
 
 
 msgid "Select Tracks"
-msgstr "Выбрать дорожки"
+msgstr ""
 
 
 msgid "Settings"
 msgstr "Настройки"
 
 
-msgid "Shared Libraries"
-msgstr "Общие библиотеки"
+msgid "Show"
+msgstr ""
 
 
 msgid "Show Clock"
@@ -417,7 +425,7 @@ msgstr " Просмотр Фотографий"
 
 
 msgid "Show Unwatched Count"
-msgstr "Показать количество непросмотренных"
+msgstr "Показать непросмотренные"
 
 
 msgid "Shows"
@@ -425,23 +433,11 @@ msgstr "Сериалы"
 
 
 msgid "Shutter Speed"
-msgstr "Скорость затвора"
+msgstr ""
 
 
 msgid "SlideShow"
 msgstr "Слайдшоу"
-
-
-msgid "Studio"
-msgstr "Студия"
-
-
-msgid "Subs"
-msgstr "Субтитры"
-
-
-msgid "Subtitle Renderer"
-msgstr "Отрисовка субтитров"
 
 
 msgid "Subtitle Size %"
@@ -449,15 +445,15 @@ msgstr "Размер субтитров %"
 
 
 msgid "Subtitle Track"
-msgstr "Дорожка субтитров"
+msgstr ""
 
 
 msgid "Synopsis hidden."
-msgstr "Краткий обзор скрыт."
+msgstr ""
 
 
 msgid "TV Show Navigation Bar"
-msgstr "Панель навигации по сериалам"
+msgstr "Панел навигации по сериалам"
 
 
 msgid "TV Show Options"
@@ -465,11 +461,11 @@ msgstr "Настройки сериалов"
 
 
 msgid "TV Show View"
-msgstr "Просмотр сериалов"
+msgstr "Прсмотрт ТВ сериалов"
 
 
 msgid "TheMovieDB: No Trailer Info available"
-msgstr "TheMovieDB: Нет информации по трейлеру"
+msgstr ""
 
 
 msgid "Time Format"
@@ -477,15 +473,11 @@ msgstr "Формат времени"
 
 
 msgid "To sign in to MyPlex, enter your Email address, username or Plex forum username."
-msgstr "Чтобы войти в MyPlex, введите свой ​​адрес электронной почты, имя пользователя или логин на форуме Plex."
-
-
-msgid "Top Level Options"
-msgstr "Настройки верхнего уровня"
+msgstr ""
 
 
 msgid "Trailer"
-msgstr "Трейлер"
+msgstr ""
 
 
 msgid "Transcoder"
@@ -493,7 +485,7 @@ msgstr "Транскодер"
 
 
 msgid "Transcoder Action"
-msgstr "Действие транскодера"
+msgstr ""
 
 
 msgid "Transcoder Quality"
@@ -505,7 +497,7 @@ msgstr "Непросмотренные"
 
 
 msgid "Unwatched Synopsis"
-msgstr "Непросмотренные обзоры"
+msgstr ""
 
 
 msgid "Version"
@@ -521,7 +513,7 @@ msgstr "Экранный видео плеер"
 
 
 msgid "View Show"
-msgstr "Просмотр сериала"
+msgstr ""
 
 
 msgid "Wiki/Docs"
@@ -529,19 +521,11 @@ msgstr "Wiki/Docs"
 
 
 msgid "Writers"
-msgstr "Сценаристы"
+msgstr "Писатели"
 
 
 msgid "Year"
 msgstr "Год"
-
-
-msgid "refreshing"
-msgstr "Обновление"
-
-
-msgid "remote"
-msgstr "Удаленно"
 
 
 msgid "{0:0d}x{1:02d} {2}"
@@ -558,4 +542,5 @@ msgstr "{0:d}ч {1:d}мин"
 
 msgid "{0} unwatched"
 msgstr "{0} непросмотренных"
+
 
